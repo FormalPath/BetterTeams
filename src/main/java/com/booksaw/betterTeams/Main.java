@@ -211,6 +211,8 @@ public class Main extends JavaPlugin {
 
                 setupCommands();
                 setupListeners();
+
+                getServer().getPluginManager().registerEvents(new TeamPlaceholderUpdater(), this);
         }
 
         @Override
