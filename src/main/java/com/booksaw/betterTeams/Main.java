@@ -118,7 +118,7 @@ import com.booksaw.betterTeams.score.ScoreManagement;
 import com.booksaw.betterTeams.team.storage.StorageType;
 import com.booksaw.betterTeams.team.storage.convert.Converter;
 import com.booksaw.betterTeams.team.storage.storageManager.YamlStorageManager;
-
+import com.booksaw.betterTeams.integrations.placeholder.TeamPlaceholderUpdater
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 
@@ -208,6 +208,8 @@ public class Main extends JavaPlugin {
                 if (!setupPermissions()) {
                         perms = null;
                 }
+
+                getServer().getPluginManager().registerEvents(new TeamPlaceholderUpdater(), this);
 
                 setupCommands();
                 setupListeners();
