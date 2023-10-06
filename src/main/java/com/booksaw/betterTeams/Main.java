@@ -122,6 +122,8 @@ import com.booksaw.betterTeams.team.storage.storageManager.YamlStorageManager;
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.permission.Permission;
 
+import com.booksaw.betterTeams.integrations.placeholder.TeamPlaceholders;
+
 /**
  * Main class of the plugin, extends JavaPlugin
  *
